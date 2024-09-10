@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Follower Growth</title>
+    <style>
+        /* CSS styling for the page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            text-align: center;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            margin-bottom: 20px;
+        }
+
+        section {
+            margin: 20px auto;
+            width: 80%;
+            max-width: 600px;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+
+        h1, h2 {
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            text-align: left;
+            margin-bottom: 10px;
+        }
+
+        input {
+            padding: 10px;
+            width: 80%;
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #follower-count {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #4CAF50;
+        }
+
+        footer {
+            background-color: #f1f1f1;
+            padding: 10px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Boost Your Instagram Followers</h1>
+    </header>
+
+    <section id="tips">
+        <h2>Growth Tips</h2>
+        <ul>
+            <li>Post consistently with engaging content.</li>
+            <li>Use relevant hashtags and tag accounts.</li>
+            <li>Engage with your followers and other accounts.</li>
+        </ul>
+    </section>
+
+    <section id="tracker">
+        <h2>Live Follower Count</h2>
+        <p>Check your Instagram followers below:</p>
+        <input type="text" id="insta-handle" placeholder="Enter Instagram Username">
+        <button id="check-btn">Check Followers</button>
+        <p id="follower-count"></p>
+    </section>
+
+    <section id="cta">
+        <h2>Follow Us on Instagram!</h2>
+        <a href="https://www.instagram.com/yourhandle" target="_blank">Follow Now</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Instagram Growth Tips</p>
+    </footer>
+
+    <script>
+        // JavaScript for checking follower count (using placeholder values)
+        document.getElementById("check-btn").addEventListener("click", checkFollowers);
+
+        function checkFollowers() {
+            const username = document.getElementById("insta-handle").value.trim();
+
+            if (username === "") {
+                alert("Please enter a valid Instagram username!");
+                return;
+            }
+
+            // Simulate follower count - replace this with a real API if needed
+            const followerCount = Math.floor(Math.random() * 10000) + 1000;
+
+            document.getElementById("follower-count").innerText = `${username} has ${followerCount} followers!`;
+        }
+    </script>
+</body>
+</html>
+
+
